@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<decorators defaultdir="/layout">
+	<decorator name="main" page="boardlayout.jsp">
+		<pattern>*.shop</pattern>
+	</decorator>
+	<decorator name="user" page="userlayout.jsp">
+		<pattern>/user/*.shop</pattern>
+		<pattern>/admin/*.shop</pattern>
+	</decorator>
+	<excludes>
+		<pattern>/board/imgupload*</pattern>
+		<pattern>/admin/graph*</pattern>
+		<pattern>/ajax/*</pattern>
+	</excludes>
+</decorators>
